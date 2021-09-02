@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class MyScript : MonoBehaviour
 {
-    
+    int n;
     void Start()
     {
-        print("hello");
-        Debug.Log("hello world1");
-    }
-
-    
-    void Update()
-    {
+        for (int n = 0 ; n <= 100 ; n++)
+        {
+            print(n);
+        }
+        for (int n = 1 ; n <= 100 ;n++)
+        {
+                if (n % 2 == 0)
+                    print(n);
+            
+        }
+        float x = 1.0f;
+        float r = circle(x);
         
+
+    }
+     float circle(float x)
+    {
+     float result;
+     x = 5.0f;
+     result = 3.14f * (x * x);
+     print(result);
+     return result;
     }
 }
